@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR Sejarah Arsitektur</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+        <a-entity 
+          gltf-model="assets/gothic_church.glb" 
+          scale="0.5 0.5 0.5" 
+          position="0 0 0">
+        </a-entity>
+        <a-text value="Gaya Arsitektur Gotik (1100–1500)" 
+                position="-1 1 0" 
+                color="white" 
+                width="2">
+        </a-text>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
